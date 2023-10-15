@@ -11,3 +11,13 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: solution for filenotfoundexception
+  steps:
+  - intent: job_failed_w_error_file_not_found
+  - action: utter_failed_w_error_file_not_found
+
+- rule: solution for nosuchfileexception
+  steps:
+  - intent: job_failed_w_error_no_such_file
+  - action: utter_failed_w_error_no_such_file
